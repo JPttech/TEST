@@ -4,7 +4,7 @@
 //
 //  Created by JP LOSIOU on 3/31/17.
 //  Copyright © 2017 JP LOSIOU. All rights reserved.
-//
+// This is the View Controller
 
 import UIKit
 import AVFoundation
