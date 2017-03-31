@@ -41,7 +41,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate,AVAudioRecorderDele
     }
     @IBAction func playPressed(_ sender: Any) {
         
-         print("test play pressed")
+        print("test play pressed")
         
         if(soundPlayer?.isPlaying == true)
         {
@@ -54,6 +54,8 @@ class ViewController: UIViewController,AVAudioPlayerDelegate,AVAudioRecorderDele
             do {
                 try soundPlayer = AVAudioPlayer(contentsOf: url)
                 soundPlayer?.delegate = self
+                soundPlayer?.enableRate = true
+                soundPlayer?.rate = 0.5
                 soundPlayer?.play()
             } catch {
                 print("Error initializing player \(error)")
